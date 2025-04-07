@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Cuquis</title>
+    <style>
+        /* Fondo de pantalla */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('formato quimica.png'); /* Reemplaza por tu fondo */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 3em;
+            letter-spacing: 3px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .foto {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .foto:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .foto img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .titulo {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes fadeUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Only Cuquis</h1>
+
+    <div class="galeria">
+        <div class="foto">
+            <img src="imagenss.png" alt="Cuqui 1">
+            <div class="titulo">Cuquis durmiendo</div>
+        </div>
+
+        <div class="foto">
+            <img src="imagenss.png" alt="Cuqui 2">
+            <div class="titulo">Cuquis sexosa</div>
+        </div>
+
+        <div class="foto">
+            <img src="imagenss.png" alt="Cuqui 3">
+            <div class="titulo">Cuquis enojada</div>
+        </div>
+
+        <div class="foto">
+            <img src="imagenss.png" alt="Cuqui 4">
+            <div class="titulo">Cuquis ciega</div>
+        </div>
+    </div>
+    <h6>puede haber errores al cargar las imagenes en caso de ser de perukistan</h6>
+</body>
+</html>
